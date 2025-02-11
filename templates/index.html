@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DUT Control</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <button onclick="power_button()">Toggle Power Button</button>
+        <button onclick="reset_hold()">Hold Reset</button>
+        <button onclick="reset_release()">Release Reset</button>
+    </div>
+
+    <script src="{{ url_for('static', filename='power_actions.js') }}"></script>
+</body>
+</html>
